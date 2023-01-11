@@ -1,0 +1,48 @@
+img {
+  height: 100%;
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}
+.row {
+  margin-bottom: 10px;
+}
+.secend-row, .third-row {
+  display: flex;
+  gap: 10px;
+}
+.secend-row > div {
+  flex: 1;P
+}
+.second-row-third-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.second-row-third-container div {
+  height: calc(50% - 10px/2)  ;
+}
+.third-row-secend-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.third-row > div {
+    flex: 1;
+    gap: 10px;
+}
+@media screen  and (max-width: 576px) {
+    .secend-row, .third-row {
+        flex-direction: column;
+      }
+      .third-row-secend-container{
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
+@media screen and (min-width: 577px) {
+    .row{
+     height: 400px;
+
+    }
+    
+}
