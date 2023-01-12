@@ -63,6 +63,15 @@ ul {
     font-size: 14px;
     padding: 5px;
   }
+  .flex-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-menu li a {
+    font-size: 14px;
+
+    text-decoration: none;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 1200px) {
   .grid-container {
@@ -87,5 +96,14 @@ ul {
   }
   ul li a {
     color: white;
+  }
+  .flex-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-menu li a {
+    font-size: 22px;
+    margin: 10px 25px;
+    text-decoration: none;
   }
 }
